@@ -41,7 +41,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.gallery {
-  background-color: yellow; }
+.gallery figcaption {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=styles.css.map */

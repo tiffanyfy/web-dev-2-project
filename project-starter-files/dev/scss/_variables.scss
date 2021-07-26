@@ -1,8 +1,14 @@
 //font variables 
-$nav-font: 'Roboto', sans-serif, 700;
-$heading-font: 'Roboto', sans-serif, 400;
-$body-font:'Roboto', sans-serif, 300;
+$nav-font: 'Roboto', sans-serif;
+$heading-font: 'Roboto', sans-serif;
+$body-font:'Roboto', sans-serif;
 $font-size: 1.5rem;
+
+$font-weight: (
+    regular: 300,
+    semi: 400,
+    bold: 700,
+);
 
 //media query breakpoints
 $breakpoint-mobile: 640px;
