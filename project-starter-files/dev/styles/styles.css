@@ -42,7 +42,9 @@ table {
   border-spacing: 0; }
 
 .gallery figcaption {
+  padding: 0.5rem 0;
   font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
   background-color: black;
   color: white;
   text-transform: uppercase; }
