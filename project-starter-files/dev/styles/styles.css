@@ -41,15 +41,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-header {
-  margin: 0 auto; }
+main {
+  background-image: url(/images/bg.jpg); }
+
+@media (min-width: 800px) {
+  .wrapper {
+    margin: 0 8rem 0 8rem; } }
 
 #tablet-topbar, #desktop-topbar {
   display: none; }
 
+#container {
+  padding: 0.5rem; }
+
 @media (min-width: 500px) {
   #topbar {
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -57,7 +64,7 @@ header {
     #topbar picture {
       padding-right: 2rem; }
   #search {
-    width: 200px; }
+    width: 100px; }
   #tablet-topbar {
     display: flex;
     flex-wrap: nowrap;
@@ -65,6 +72,8 @@ header {
     justify-content: space-between; } }
 
 @media (min-width: 700px) {
+  #search {
+    width: 200px; }
   #tablet-topbar #socials {
     display: flex;
     flex-wrap: nowrap;
@@ -80,7 +89,10 @@ nav {
   width: 100%;
   background-color: #08467f;
   display: none;
-  text-align: center; }
+  text-align: center;
+  z-index: 999; }
+  nav #wrapper {
+    display: none; }
 
 #search {
   display: flex;
@@ -95,7 +107,7 @@ nav {
     background-color: #dfdfdf; }
 
 li {
-  padding: 0.5rem 1rem 0.5rem 1rem; }
+  padding: 0.5rem 0 0.5rem 0; }
 
 ul {
   margin: 0;
@@ -122,7 +134,7 @@ nav ul a li {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 0.5rem 1rem 0.5rem 1rem; }
+  padding-left: 0.5rem; }
   #socials .fab {
     padding-right: 1rem;
     font-size: 1.5rem;
@@ -135,7 +147,7 @@ nav ul a li {
     display: block; }
     nav ul {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: space-around;
       background-color: #185898; }
     nav li {
@@ -150,12 +162,24 @@ nav ul a li {
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%; }
+    nav ul {
+      width: 100%; }
     nav #search {
       display: flex;
       background-color: #dfdfdf;
       border: black solid 1px;
       padding: 0.5rem;
-      border-radius: 0px; } }
+      border-radius: 0px; }
+    nav #nav-desktop {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      width: 100%; }
+    nav #wrapper {
+      width: 100%;
+      margin: 0 8rem 0 8rem; } }
 
 .hamburger {
   display: inline;

@@ -1,10 +1,13 @@
-
 nav{
     position: absolute;
     width:  100%;
     background-color: $accent-color;
     display: none;
     text-align: center;
+    z-index: 999;
+    #wrapper {
+        display: none;
+    }
 }
 #search {
     display: flex;
@@ -20,7 +23,7 @@ nav{
     }
 }
 li {
-    padding: $menu-item-padding;
+    padding: 0.5rem 0 0.5rem 0;
 }
 ul{
     margin: 0; 
@@ -45,7 +48,7 @@ nav ul a li{
 #socials {
     @include header-flex;
     background-color: white;
-    padding: $menu-item-padding;
+    padding-left: 0.5rem;
     
     .fab {
         padding-right: 1rem;
@@ -62,9 +65,10 @@ nav ul a li{
         display: block;
         ul {
             display: flex;
-            flex-wrap: wrap ;
+            flex-wrap: nowrap ;
             justify-content: space-around;
             background-color: $primary-color;
+           
         }
         li {
             background-color: $primary-color;
@@ -83,6 +87,10 @@ nav ul a li{
         justify-content: center;
         width: 100%;
 
+        ul {
+            width: 100%;
+        }
+
         #search {
             display: flex;
             background-color: #dfdfdf;
@@ -91,6 +99,14 @@ nav ul a li{
             border-radius: 0px;
         }
 
+        #nav-desktop {
+            @include header-flex;
+            flex-direction: row-reverse;
+            width: 100%;
+        }
+        #wrapper {
+            width: 100%;
+            margin: 0 8rem 0 8rem;
+        }
     }
 }
-
