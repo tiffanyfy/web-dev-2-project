@@ -1,0 +1,27 @@
+ul {
+    @include flex-column;
+    @include ul-base;
+    @include flatten;
+    border: $border;
+    border-radius: 2%;
+    background-color: white;
+
+    li {
+        border-bottom: 1px solid lightgrey;
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        font-size: 100%;
+        padding: 1rem 2.5rem;
+        color: #5e5aa7;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: map-get($colors, hover-color)
+        }
+    }
+
+}
