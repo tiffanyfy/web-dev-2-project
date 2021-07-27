@@ -1,0 +1,8 @@
+main {
+    background-image: url(/images/bg.jpg);
+}
+@media (min-width: $breakpoint-desktop) {
+    .wrapper {
+        margin: 0 8rem 0 8rem;
+    }
+}
