@@ -2,7 +2,8 @@
 $nav-font: 'Roboto Condensed', sans-serif;
 $heading-font: 'Roboto Condensed', sans-serif;
 $body-font: 'Roboto Condensed', sans-serif;
-$font-size: 1.5rem;
+$small-font: 1rem;
+$large-font: 1.5rem;
 
 $font-weight: (
     regular: 300,
@@ -22,3 +23,7 @@ $accent-color: rgb(8, 70, 127);
 
 //padding
 $menu-item-padding: .5rem 1rem 0.5rem 1rem;
+$body-padding: 0.5rem;
+
+// image width
+$img-full: 100%;
