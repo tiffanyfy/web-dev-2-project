@@ -1,6 +1,6 @@
-.articles {
+.section-articles {
     background-color: white;
-    padding: 0.75rem;
+    padding: 0.5rem;
 
     h2 {
         font-family: $heading-font;
@@ -17,6 +17,10 @@
         line-height: 1.4;
     }
 
+    .article {
+        position: relative;
+    }
+
     button {
         padding: 0.5rem;
         margin-top: 0.5rem;
@@ -26,10 +30,13 @@
         text-transform: uppercase;
         color: white;
         justify-content: right;
+        position: absolute;
+        right: 0;
     }
 
     img {
         width: 100%;
         margin: 1.5rem 0 0.5rem;
     }
+
 }
