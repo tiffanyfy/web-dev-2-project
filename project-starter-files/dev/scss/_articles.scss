@@ -4,7 +4,7 @@
 
     h2 {
         font-family: $heading-font;
-        font-size: 1.5rem;
+        font-size: $large-font;
         line-height: 1.2;
         text-transform: uppercase;
         color: $primary-color;
@@ -12,7 +12,7 @@
 
     p {
         font-family: $body-font;
-        font-size: 1rem;
+        font-size: $small-font;
         font-weight: map-get($font-weight, semi);
         line-height: 1.4;
         margin: 0.5rem 0 2rem;
