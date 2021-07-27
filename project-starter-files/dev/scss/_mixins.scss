@@ -1,18 +1,19 @@
-@mixin flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-//styles for ul
-@mixin ul-base {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+
+
+//centering element (wrapper)
+@mixin margin-center {
+    margin: {
+        left: auto;
+        right: auto;
+    }
 }
 
-//clearing margins anad padding and setting the line-height to 1
-@mixin flatten {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+//centering elements in a flex container
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
