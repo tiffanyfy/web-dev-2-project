@@ -11,6 +11,16 @@ $font-weight: (
     bold: 700,
 );
 
+
+
+// color variables
+$primary-color: rgb(24, 88, 152);
+$accent-color: rgb(8, 70, 127);
+
+
+
+//globally scoped variables
+
 //media query breakpoints
 $breakpoint-mobile: 500px;
 $breakpoint-tablet: 700px;

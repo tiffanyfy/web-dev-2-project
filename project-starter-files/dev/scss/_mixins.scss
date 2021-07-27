@@ -1,3 +1,24 @@
+
+
+
+
+//centering element (wrapper)
+@mixin margin-center {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+//centering elements in a flex container
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
 @mixin header-flex {
     display: flex;
     flex-wrap: nowrap;
@@ -11,3 +32,4 @@
     grid-gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
 }
+
