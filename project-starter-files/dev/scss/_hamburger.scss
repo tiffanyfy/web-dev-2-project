@@ -1,0 +1,22 @@
+.hamburger{
+    display: inline;
+    cursor: pointer;
+    padding-top: .2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .bar1, .bar2, .bar3{
+        width: 35px;
+        height: 5px;
+        background-color: $accent-color;
+        margin: 4px;
+        transition: 0.4s;
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: $breakpoint-mobile) {
+    .hamburger {
+        display: none;
+    }
+}

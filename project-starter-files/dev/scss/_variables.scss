@@ -11,10 +11,14 @@ $font-weight: (
 );
 
 //media query breakpoints
-$breakpoint-mobile: 640px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+$breakpoint-mobile: 500px;
+$breakpoint-tablet: 700px;
+$breakpoint-desktop: 800px;
 
 // color variables
 $primary-color: rgb(24, 88, 152);
 $accent-color: rgb(8, 70, 127);
+
+
+//padding
+$menu-item-padding: .5rem 1rem 0.5rem 1rem;
