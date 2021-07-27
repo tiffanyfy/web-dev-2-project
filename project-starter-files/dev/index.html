@@ -28,7 +28,7 @@
 <header>
 
 	<div id="container" >
-		<div id="topbar">
+		<div id="topbar" class="wrapper">
 			<picture>
 				<source srcset="images/small_logo.jpg" 
 				media="(max-width: 400px)"> <!-- change size -->
@@ -61,25 +61,26 @@
 		</div>
 		<nav>
 			<!--search-->
-			<div id="search">
-				<input type=“text” placeholder=Search >
-				<span><img src="images/search.png" alt="Search bar icon"></span>
+			<div class="wrapper" id="nav-desktop">
+				<div id="search">
+					<input type=“text” placeholder=Search >
+					<span><img src="images/search.png" alt="Search bar icon"></span>
+				</div>
+				<!--ul-->
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Recipes</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<!--social links-->
+				<div id="socials">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-google"></i>
+					<i class="fab fa-twitter"></i>
+				</div>
 			</div>
-			<!--ul-->
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Reviews</a></li>
-				<li><a href="#">Recipes</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<!--social links-->
-			<div id="socials">
-				<i class="fab fa-facebook-f"></i>
-				<i class="fab fa-google"></i>
-				<i class="fab fa-twitter"></i>
-			</div>
-
 		</nav>
 		
 	</div>
@@ -88,98 +89,101 @@
 
 <main>
 
-	<section class="gallery">
-		<figure id="gallery1">
-			<picture>
-				<source srcset="images/mussel_small.jpg" 
-				media="(max-width: 768px)">
-				<img src="images/mussel.jpg" alt="Mussels dish">
-			</picture>
-			<figcaption>Lorem ipsum dolor sit</figcaption>
-		</figure>
+	<div class="wrapper">
 
-		<figure id="gallery2">
-			<img src="images/salad.jpg" alt="Salad dish">
-			<figcaption>Lorem, ipsum dolor</figcaption>
-		</figure>
+		<section class="gallery">
+			<figure id="gallery1">
+				<picture>
+					<source srcset="images/mussel_small.jpg" 
+					media="(max-width: 768px)">
+					<img src="images/mussel.jpg" alt="Mussels dish">
+				</picture>
+				<figcaption>Lorem ipsum dolor sit</figcaption>
+			</figure>
 
-		<figure id="gallery3">
-			<img src="images/pancake.jpg" alt="Stack of pancakes">
-			<figcaption>Sit amet consectetur</figcaption>
-		</figure>
-	</section>
+			<figure id="gallery2">
+				<img src="images/salad.jpg" alt="Salad dish">
+				<figcaption>Lorem, ipsum dolor</figcaption>
+			</figure>
 
-	<div class="sidebar">
-
-		<section>
-			<h2>Latest Recipes</h2>
-			<div>
-				<div>
-					<img src="images/lamb_tb.jpg" alt="Lamb dish">
-					<a href="#">Met concsec tetur elit</a>
-				</div>
-				<div>
-					<img src="images/breakfast_tb.jpg" alt="Breakfast dish">
-					<a href="#">Archi tecto dolores</a>
-				</div>
-				<div>
-					<img src="images/calamari_tb.jpg" alt="Calimari dish">
-					<a href="#">Mexpe dita ciatis</a>
-				</div>
-				<div>
-					<img src="images/steak_tb.jpg" alt="Steak dish">
-					<a href="#">Fugiat eaque aore</a>
-				</div>
-			</div>
+			<figure id="gallery3">
+				<img src="images/pancake.jpg" alt="Stack of pancakes">
+				<figcaption>Sit amet consectetur</figcaption>
+			</figure>
 		</section>
 
-		<section>
-			<h2>Cuisines</h2>
-			<div>
-				<ul>
-					<li><a href="#">American (95)</a></li>
-					<li><a href="#">Asian (33)</a></li>
-					<li><a href="#">Cambodian (3)</a></li>
-					<li><a href="#">Chinese (281)</a></li>
-					<li><a href="#">Filipino (8)</a></li>
-					<li><a href="#">French (40)</a></li>
-					<li><a href="#">German (7)</a></li>
-					<li><a href="#">Greek (29)</a></li>
-					<li><a href="#">Indian (44)</a></li>
-					<li><a href="#">Italian (60)</a></li>
-					<li><a href="#">Jamaican (7)</a></li>
-					<li><a href="#">Japanese (202)</a></li>
-					<li><a href="#">Korean (120)</a></li>
-					<li><a href="#">Malaysian (12)</a></li>
-					<li><a href="#">Mediterranean (9)</a></li>
-					<li><a href="#">Mexican (25)</a></li>
-					<li><a href="#">Southern (14)</a></li>
-				</ul>
-			</div>
+		<div class="sidebar">
+
+			<section>
+				<h2>Latest Recipes</h2>
+				<div>
+					<div>
+						<img src="images/lamb_tb.jpg" alt="Lamb dish">
+						<a href="#">Met concsec tetur elit</a>
+					</div>
+					<div>
+						<img src="images/breakfast_tb.jpg" alt="Breakfast dish">
+						<a href="#">Archi tecto dolores</a>
+					</div>
+					<div>
+						<img src="images/calamari_tb.jpg" alt="Calimari dish">
+						<a href="#">Mexpe dita ciatis</a>
+					</div>
+					<div>
+						<img src="images/steak_tb.jpg" alt="Steak dish">
+						<a href="#">Fugiat eaque aore</a>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Cuisines</h2>
+				<div>
+					<ul>
+						<li><a href="#">American (95)</a></li>
+						<li><a href="#">Asian (33)</a></li>
+						<li><a href="#">Cambodian (3)</a></li>
+						<li><a href="#">Chinese (281)</a></li>
+						<li><a href="#">Filipino (8)</a></li>
+						<li><a href="#">French (40)</a></li>
+						<li><a href="#">German (7)</a></li>
+						<li><a href="#">Greek (29)</a></li>
+						<li><a href="#">Indian (44)</a></li>
+						<li><a href="#">Italian (60)</a></li>
+						<li><a href="#">Jamaican (7)</a></li>
+						<li><a href="#">Japanese (202)</a></li>
+						<li><a href="#">Korean (120)</a></li>
+						<li><a href="#">Malaysian (12)</a></li>
+						<li><a href="#">Mediterranean (9)</a></li>
+						<li><a href="#">Mexican (25)</a></li>
+						<li><a href="#">Southern (14)</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<section class="section-articles">
+			<article>
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Posted by Mike Lee on Saturday, August 25, 2013</p>
+				<img src="images/pasta.jpg" alt="Plate of pasta">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rem nam qui placeat ex architecto maiores odio voluptatibus harum nostrum.</p>
+				<button type="button" class="read-more-btn">Read More...</button>
+			</article>
+			<article>
+				<h2>Vel, eaque quisquam sit amet</h2>
+				<p>Posted by Mike Lee on Monday, July 29, 2013</p>
+				<img src="images/ramen.jpg" alt="Bowl of ramen">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rem nam qui placeat ex architecto maiores odio voluptatibus harum nostrum.</p>
+				<button type="button" class="read-more-btn">Read More...</button>
+			</article>
+
 		</section>
 
-	</div>
-
-	<section class="section-articles">
-		<article>
-			<h2>Lorem ipsum dolor sit amet</h2>
-			<p>Posted by Mike Lee on Saturday, August 25, 2013</p>
-			<img src="images/pasta.jpg" alt="Plate of pasta">
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rem nam qui placeat ex architecto maiores odio voluptatibus harum nostrum.</p>
-			<button type="button" class="read-more-btn">Read More...</button>
-		</article>
-		<article>
-			<h2>Vel, eaque quisquam sit amet</h2>
-			<p>Posted by Mike Lee on Monday, July 29, 2013</p>
-			<img src="images/ramen.jpg" alt="Bowl of ramen">
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rem nam qui placeat ex architecto maiores odio voluptatibus harum nostrum.</p>
-			<button type="button" class="read-more-btn">Read More...</button>
-		</article>
-
-	</section>
-
-	<div>
-		<a href="#"><i class=“fas fa-chevron-circle-left”></i><img src="images/previous_btn.png" alt="Older posts button"></a>
+		<div>
+			<a href="#"><i class=“fas fa-chevron-circle-left”></i><img src="images/previous_btn.png" alt="Older posts button"></a>
+		</div>
 	</div>
 
 </main>
