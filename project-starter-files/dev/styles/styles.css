@@ -176,4 +176,13 @@ nav ul a li {
   .hamburger {
     display: none; } }
 
+footer {
+  background-color: #185898;
+  text-align: center;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem; }
+  footer a {
+    text-decoration: none;
+    color: white; }
+
 /*# sourceMappingURL=styles.css.map */
