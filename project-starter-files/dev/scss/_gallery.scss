@@ -5,20 +5,25 @@
     figure {
         position: relative;
         overflow: hidden;
+        max-height: 18.75rem;
     }
 
     img {
-        // position: relative;
-        display: block;
-        width: 100%;
         margin: 0.5rem 0;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #gallery1 {
+        object-position: bottom;
     }
 
     figcaption {
-        padding: 0.5rem;
+        padding: 1rem;
         background-color: rgba(0, 0, 0, 0.7);
         font-family: $heading-font;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         color: white;
         text-transform: uppercase;
         position: absolute;
@@ -27,6 +32,11 @@
         left: 0;
         right: 0;
         bottom: 8px;
+
+        @media (min-width: 26.875rem) {
+            bottom: 0px;
+        }
+        
     }
 
     @media (min-width: $breakpoint-tablet) {

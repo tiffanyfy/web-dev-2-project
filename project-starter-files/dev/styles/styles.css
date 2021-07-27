@@ -180,16 +180,21 @@ nav ul a li {
   padding: 0.5rem; }
   .gallery figure {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    max-height: 18.75rem; }
   .gallery img {
-    display: block;
+    margin: 0.5rem 0;
     width: 100%;
-    margin: 0.5rem 0; }
+    height: auto;
+    display: block; }
+  .gallery #gallery1 {
+    -o-object-position: bottom;
+       object-position: bottom; }
   .gallery figcaption {
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: white;
     text-transform: uppercase;
     position: absolute;
@@ -198,6 +203,9 @@ nav ul a li {
     left: 0;
     right: 0;
     bottom: 8px; }
+    @media (min-width: 26.875rem) {
+      .gallery figcaption {
+        bottom: 0px; } }
   @media (min-width: 700px) {
     .gallery {
       display: grid;
