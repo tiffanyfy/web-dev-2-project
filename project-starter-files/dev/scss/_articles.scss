@@ -1,5 +1,5 @@
 .section-articles {
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     padding: 0.5rem;
 
     h2 {
@@ -15,9 +15,13 @@
         font-size: 0.875rem;
         font-weight: map-get($font-weight, semi);
         line-height: 1.4;
+        margin: 0.5rem 0 2rem;
     }
 
-    .article {
+    article {
+        padding: 0.5rem 0.5rem 1rem;
+        margin: 0.5rem 0;
+        background-color: white;
         position: relative;
     }
 
@@ -29,8 +33,10 @@
         font-weight: map-get($font-weight, bold);
         text-transform: uppercase;
         color: white;
-        // position: absolute;
-        // right: 0;
+        position: absolute;
+        right: 6px;
+        bottom: 8px;
+        z-index: 2;
     }
 
     img {

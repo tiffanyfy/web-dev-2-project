@@ -65,7 +65,7 @@ table {
     bottom: 8px; }
 
 .section-articles {
-  background-color: white;
+  background-color: #e6e6e6;
   padding: 0.5rem; }
   .section-articles h2 {
     font-family: "Roboto", sans-serif;
@@ -77,8 +77,12 @@ table {
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1.4; }
-  .section-articles .article {
+    line-height: 1.4;
+    margin: 0.5rem 0 2rem; }
+  .section-articles article {
+    padding: 0.5rem 0.5rem 1rem;
+    margin: 0.5rem 0;
+    background-color: white;
     position: relative; }
   .section-articles button {
     padding: 0.5rem;
@@ -87,7 +91,11 @@ table {
     background-color: #185898;
     font-weight: 700;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    position: absolute;
+    right: 6px;
+    bottom: 8px;
+    z-index: 2; }
   .section-articles img {
     width: 100%;
     margin: 1.5rem 0 0.5rem;
