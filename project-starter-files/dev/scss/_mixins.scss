@@ -1,6 +1,7 @@
 
 
 
+
 //centering element (wrapper)
 @mixin margin-center {
     margin: {
@@ -17,3 +18,18 @@
     flex-wrap: wrap;
 
 }
+
+@mixin header-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+        
+}
+
+@mixin gallery-grid {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+

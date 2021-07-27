@@ -1,0 +1,44 @@
+#tablet-topbar, #desktop-topbar {
+    display: none;
+}
+#container {
+    padding: 0.5rem;
+}
+
+@media (min-width: $breakpoint-mobile) {
+    #topbar {
+        padding: 2rem 2rem 2rem 2rem;
+        @include header-flex;
+        picture {
+            padding-right: 2rem;
+        }
+    }
+    #search {
+        width: 100px;
+    }
+   
+
+    #tablet-topbar {
+        @include header-flex;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+    #search {
+        width: 200px;
+    }
+    #tablet-topbar #socials {
+        @include header-flex;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+
+    #tablet-topbar #search 
+    {
+        display: none;
+    }
+  
+   
+}
