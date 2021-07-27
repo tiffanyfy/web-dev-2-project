@@ -60,9 +60,11 @@
 
 	<section class="gallery">
 		<figure>
-			<source srcset="images/mussel_small.jpg" 
-			media="(max-width: 600px)"> <!-- change size -->
-			<img src="images/mussel.jpg" alt="Mussels dish">
+			<picture>
+				<source srcset="images/mussel_small.jpg" 
+				media="(max-width: 414px)"> <!-- change size -->
+				<img src="images/mussel.jpg" alt="Mussels dish">
+			</picture>
 			<figcaption>Lorem ipsum dolor sit</figcaption>
 		</figure>
 
@@ -129,24 +131,25 @@
 	</div>
 
 	<section class="section-articles">
-		<div class="article">
+		<article class="article">
 			<h2>Lorem ipsum dolor sit amet</h2>
 			<p>Posted by Mike Lee on Saturday, August 25, 2013</p>
 			<img src="images/pasta.jpg" alt="Plate of pasta">
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rem nam qui placeat ex architecto maiores odio voluptatibus harum nostrum.</p>
 			<button type="button" class="read-more-btn">Read More...</button>
-		</div>
-		<div class="article">
+		</article>
+		<article class="article">
 			<h2>Vel, eaque quisquam sit amet</h2>
 			<p>Posted by Mike Lee on Monday, July 29, 2013</p>
 			<img src="images/ramen.jpg" alt="Bowl of ramen">
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rem nam qui placeat ex architecto maiores odio voluptatibus harum nostrum.</p>
 			<button type="button" class="read-more-btn">Read More...</button>
-		</div>
+		</article>
+
 	</section>
 
 	<div>
-		<img src="images/previous_btn.png" alt="Older posts button">
+		<a href="#"><i class=“fas fa-chevron-circle-left”></i><img src="images/previous_btn.png" alt="Older posts button"></a>
 	</div>
 
 </main>
