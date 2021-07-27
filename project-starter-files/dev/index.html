@@ -10,12 +10,15 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+	
 	<!-- end Google Fonts -->
 	<!-- Font Awesome-->
 	<script src="https://kit.fontawesome.com/769604f610.js" crossorigin="anonymous"></script>
 	<!-- end Font Awesome-->
-  <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<link rel="stylesheet" href="styles/styles.css?cb=1627409025909">
+
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<link rel="stylesheet" href="styles/styles.css?cb=1627339367163">
+
 
 </head>
 <body>
@@ -86,19 +89,21 @@
 <main>
 
 	<section class="gallery">
-		<figure>
-			<source srcset="images/mussel_small.jpg" 
-			media="(max-width: 600px)"> <!-- change size -->
-			<img src="images/mussel.jpg" alt="Mussels dish">
+		<figure id="gallery1">
+			<picture>
+				<source srcset="images/mussel_small.jpg" 
+				media="(max-width: 768px)">
+				<img src="images/mussel.jpg" alt="Mussels dish">
+			</picture>
 			<figcaption>Lorem ipsum dolor sit</figcaption>
 		</figure>
 
-		<figure>
+		<figure id="gallery2">
 			<img src="images/salad.jpg" alt="Salad dish">
-			<figcaption>Lorem ipsum dolor</figcaption>
+			<figcaption>Lorem, ipsum dolor</figcaption>
 		</figure>
 
-		<figure>
+		<figure id="gallery3">
 			<img src="images/pancake.jpg" alt="Stack of pancakes">
 			<figcaption>Sit amet consectetur</figcaption>
 		</figure>
@@ -155,25 +160,26 @@
 
 	</div>
 
-	<section>
-		<div>
+	<section class="section-articles">
+		<article>
 			<h2>Lorem ipsum dolor sit amet</h2>
 			<p>Posted by Mike Lee on Saturday, August 25, 2013</p>
 			<img src="images/pasta.jpg" alt="Plate of pasta">
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rem nam qui placeat ex architecto maiores odio voluptatibus harum nostrum.</p>
 			<button type="button" class="read-more-btn">Read More...</button>
-		</div>
-		<div>
+		</article>
+		<article>
 			<h2>Vel, eaque quisquam sit amet</h2>
 			<p>Posted by Mike Lee on Monday, July 29, 2013</p>
 			<img src="images/ramen.jpg" alt="Bowl of ramen">
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rem nam qui placeat ex architecto maiores odio voluptatibus harum nostrum.</p>
 			<button type="button" class="read-more-btn">Read More...</button>
-		</div>
+		</article>
+
 	</section>
 
 	<div>
-		<img src="images/previous_btn.png" alt="Older posts button">
+		<a href="#"><i class=“fas fa-chevron-circle-left”></i><img src="images/previous_btn.png" alt="Older posts button"></a>
 	</div>
 
 </main>
@@ -186,7 +192,9 @@
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-<script src="scripts/script.min.js?cb=1627409025909"></script>
+
+<script src="scripts/script.min.js?cb=1627339367163"></script>
+
 <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
 </body>
 </html>
