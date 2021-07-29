@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    background-image: url(/images/bg.jpg);
+    background-image: url("../images/bg-2.jpg");
 }
 @media (min-width: $breakpoint-desktop) {
     .wrapper {
