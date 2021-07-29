@@ -54,6 +54,9 @@ main {
     grid-template-columns: 70% 30%;
     grid-template-rows: 2 1fr; } }
 
+#older-posts {
+  padding: 1rem; }
+
 #wrapper {
   margin-left: auto;
   margin-right: auto;
