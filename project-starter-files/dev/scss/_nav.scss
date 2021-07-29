@@ -23,11 +23,10 @@ nav{
     }
 }
 li {
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 1rem;
 }
 ul{
-    margin: 0; 
-   padding: $menu-item-padding; 
+    margin: 0;  
 }
 nav ul a{
     color: rgb(255, 255, 255);
@@ -37,6 +36,35 @@ nav ul a{
     font-family: $nav-font;
     font-weight: 300;
 }
+nav ul li{
+    position:relative;
+    z-index: 1;
+  }
+  nav ul li:hover a {
+    color: $accent-color;
+  }
+  nav ul li:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: $primary-color;
+    background: #ffffff;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav ul li:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
 nav ul a li{
     list-style: none;
     padding: $menu-item-padding;
@@ -47,19 +75,84 @@ nav ul a li{
 
 #socials {
     @include header-flex;
+    justify-content: center;
     background-color: white;
-    padding-left: 0.5rem;
+    padding-left: 0.5rem; 
+    
+
     
     .fab {
         padding-right: 1rem;
-        font-size: $font-size;
+        font-size: $large-font;
         color: $primary-color;
         display: block;
     }
 }
+#socials i:after {
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+#socials i:before {
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+#socials i:hover:before {
+	--webkit-animation: toTopFromBottom 0.3s forwards;
+	-moz-animation: toTopFromBottom 0.3s forwards;
+	animation: toTopFromBottom 0.3s forwards;
+}
+
+@-webkit-keyframes toTopFromBottom {
+	49% {
+		-webkit-transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes toTopFromBottom {
+	49% {
+		-moz-transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes toTopFromBottom {
+	49% {
+		transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+#socials i:hover{
+    color: rgb(206, 206, 206);
+}
+
+
 
 
 @media (min-width: $breakpoint-mobile) {
+
     nav {
         position: unset;
         display: block;
@@ -77,6 +170,7 @@ nav ul a li{
     nav #search, #socials {
         display: none;
     }
+
 }
 
 @media (min-width: $breakpoint-desktop) {
